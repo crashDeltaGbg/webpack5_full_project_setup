@@ -1,4 +1,5 @@
 @use "variables";
+@use "fonts";
 
 *,
 *::after,
@@ -8,13 +9,31 @@
 }
 
 html {
-  font-size: 26px;
+  font-size: 16px;
 }
 
 body {
   margin: 0;
   background-color: variables.$bg;
   color: var(--text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Comforter Brush', cursive;
+}
+
+p {
+  font-family: Nunito, sans-serif;
+}
+
+pre {
+  font-family: 'Overpass Mono', monospace;
+  font-size: 0.8rem;
 }
 
 main {
